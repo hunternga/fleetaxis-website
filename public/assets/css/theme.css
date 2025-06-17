@@ -1,0 +1,304 @@
+/* FleetAxis Theme CSS */
+
+:root {
+    /* Color Palette */
+    --primary: #0052cc;
+    --primary-light: #e6f0ff;
+    --primary-dark: #0047b3;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --white: #ffffff;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+
+    /* Typography */
+    --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-size-base: 1rem;
+    --font-size-sm: 0.875rem;
+    --font-size-lg: 1.25rem;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --line-height-base: 1.5;
+    --line-height-sm: 1.25;
+    --line-height-lg: 1.75;
+
+    /* Spacing */
+    --spacing-0: 0;
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 1rem;
+    --spacing-4: 1.5rem;
+    --spacing-5: 3rem;
+    --section-spacing: 5rem;
+
+    /* Border Radius */
+    --border-radius-sm: 0.25rem;
+    --border-radius: 0.5rem;
+    --border-radius-lg: 1rem;
+    --border-radius-xl: 1.5rem;
+    --border-radius-pill: 50rem;
+
+    /* Box Shadows */
+    --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+/* Base Styles */
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--gray-900);
+    background-color: var(--white);
+}
+
+/* Typography */
+h1, .h1 { font-size: 2.5rem; font-weight: var(--font-weight-bold); }
+h2, .h2 { font-size: 2rem; font-weight: var(--font-weight-bold); }
+h3, .h3 { font-size: 1.75rem; font-weight: var(--font-weight-semibold); }
+h4, .h4 { font-size: 1.5rem; font-weight: var(--font-weight-semibold); }
+h5, .h5 { font-size: 1.25rem; font-weight: var(--font-weight-medium); }
+h6, .h6 { font-size: 1rem; font-weight: var(--font-weight-medium); }
+
+.display-1 { font-size: 6rem; font-weight: var(--font-weight-light); }
+.display-2 { font-size: 5.5rem; font-weight: var(--font-weight-light); }
+.display-3 { font-size: 4.5rem; font-weight: var(--font-weight-light); }
+.display-4 { font-size: 3.5rem; font-weight: var(--font-weight-light); }
+.display-5 { font-size: 3rem; font-weight: var(--font-weight-light); }
+.display-6 { font-size: 2.5rem; font-weight: var(--font-weight-light); }
+
+.lead {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-normal);
+}
+
+/* Buttons */
+.btn {
+    padding: 0.5rem 1.5rem;
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--border-radius-pill);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* Cards */
+.card {
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow);
+    border: none;
+}
+
+/* Navigation */
+.navbar {
+    padding: 1rem 0;
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+}
+
+.navbar-brand {
+    font-weight: var(--font-weight-bold);
+}
+
+.nav-link {
+    font-weight: var(--font-weight-medium);
+    padding: 0.5rem 1rem;
+}
+
+.nav-link.active {
+    color: var(--primary) !important;
+}
+
+/* Hero Sections */
+.hero-section {
+    padding: calc(var(--section-spacing) * 1.5) 0;
+    background-color: var(--gray-100);
+}
+
+/* Features and Benefits */
+.feature-card,
+.benefit-card {
+    padding: var(--spacing-4);
+    border-radius: var(--border-radius-lg);
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    height: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.feature-card:hover,
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Program and Position Cards */
+.program-card,
+.position-card {
+    padding: var(--spacing-4);
+    border-radius: var(--border-radius-lg);
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    height: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.program-card:hover,
+.position-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Badges */
+.badge {
+    padding: 0.5em 1em;
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--border-radius-pill);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--gray-900);
+    color: var(--white);
+    padding: var(--section-spacing) 0;
+}
+
+.footer-links a {
+    color: var(--gray-400);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: var(--white);
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--gray-800);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-link:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* Forms */
+.form-control {
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--gray-300);
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(0, 82, 204, 0.25);
+}
+
+/* Custom Components */
+.icon-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-light);
+    color: var(--primary);
+}
+
+/* Utility Classes */
+.bg-primary-subtle {
+    background-color: var(--primary-light);
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    :root {
+        --section-spacing: 3rem;
+    }
+
+    .hero-section {
+        padding: var(--section-spacing) 0;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .display-5 {
+        font-size: 2rem;
+    }
+
+    .display-6 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .footer {
+        display: none;
+    }
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+}

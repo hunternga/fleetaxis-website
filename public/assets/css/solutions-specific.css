@@ -1,0 +1,244 @@
+/* Solutions page specific styles */
+
+/* Add a sol- prefix to all classes to avoid conflicts with index styles */
+
+/* Solutions page background */
+.sol-page-bg {
+    background-color: #f8f9fa;
+}
+
+/* Hero section */
+.sol-hero {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    position: relative;
+}
+
+.sol-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.sol-hero-container {
+    position: relative;
+    z-index: 1;
+}
+
+.sol-hero-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.sol-hero-badge {
+    margin-bottom: 20px;
+}
+
+.sol-hero-badge span {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+}
+
+.sol-hero-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #212529;
+}
+
+.sol-hero-description {
+    font-size: 20px;
+    color: var(--bs-primary);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.sol-hero-subtitle {
+    font-size: 18px;
+    color: #6c757d;
+}
+
+/* Section titles */
+.sol-section {
+    padding: 80px 0;
+}
+
+.sol-section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sol-section-subtitle {
+    color: var(--bs-primary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.sol-section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #212529;
+}
+
+.sol-section-desc {
+    font-size: 18px;
+    color: #6c757d;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Solution cards */
+.sol-card {
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sol-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sol-card-body {
+    padding: 32px;
+}
+
+.sol-card-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+    color: var(--bs-primary);
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-bottom: 16px;
+}
+
+.sol-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #212529;
+}
+
+.sol-card-desc {
+    font-size: 18px;
+    color: #495057;
+    margin-bottom: 24px;
+}
+
+/* Features list */
+.sol-features {
+    margin-bottom: 24px;
+}
+
+.sol-features li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #495057;
+}
+
+.sol-features li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--bs-primary);
+}
+
+/* Keywords */
+.sol-keywords {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #e9ecef;
+}
+
+.sol-keyword {
+    display: inline-block;
+    padding: 4px 10px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: #f1f3f5;
+    color: #495057;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+/* Image container */
+.sol-image-container {
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sol-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.sol-image-container:hover .sol-image {
+    transform: scale(1.05);
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .sol-hero-title {
+        font-size: 32px;
+    }
+    
+    .sol-section-title {
+        font-size: 28px;
+    }
+    
+    .sol-card-title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sol-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .sol-hero-title {
+        font-size: 28px;
+    }
+    
+    .sol-hero-description {
+        font-size: 18px;
+    }
+    
+    .sol-section {
+        padding: 60px 0;
+    }
+    
+    .sol-image-container {
+        height: 240px;
+        margin-top: 24px;
+    }
+}
