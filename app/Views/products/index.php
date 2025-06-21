@@ -10,12 +10,23 @@
 <?= $this->section('content') ?>
 
     <!-- Products Hero Section -->
-    <section class="sol-hero py-5 mt-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mx-auto text-center">
-                    <h1 class="fw-bold text-dark mb-3">Fleet Management Hardware</h1>
-                    <p class="lead mb-0">Premium products for effective fleet tracking and management</p>
+    <section class="sol-hero">
+        <div class="container sol-hero-container py-5">
+            <div class="sol-hero-card">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <div class="sol-hero-badge">
+                            <span class="badge rounded-pill bg-primary px-4 py-2">
+                                Our Products
+                            </span>
+                        </div>
+                        <h1 class="fw-bold text-dark mb-4">
+                            Fleet Management Hardware
+                        </h1>
+                        <p class="lead mb-4">
+                            Premium products for effective fleet tracking and management
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
